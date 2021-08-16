@@ -15,7 +15,7 @@ const users = [
 //   callback(updatedUsers);
 // };
 
-const toggleUserState = (allUsers, userName, callback) => {
+const toggleUserState = (allUsers, userName) => {
   const promise = new Promise(resolve => {
     const updatedUsers = allUsers.map(user =>
       user.name === userName ? { ...user, active: !user.active } : user,
